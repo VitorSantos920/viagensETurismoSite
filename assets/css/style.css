@@ -253,7 +253,6 @@ section.img-content img {
     .cabecalho {
         flex-direction: column;
         gap: 20px;
-<<<<<<< HEAD
     }
 }
 
@@ -280,11 +279,8 @@ section.img-content img {
     }
     nav.menu {
         display: none;
-=======
->>>>>>> 6139554320d45b51ed487d477f86e6037fca98ce
     }
 }
-
 /* 720px */
 @media screen and (max-width: 720px){
     div.desc h2.title-content {
