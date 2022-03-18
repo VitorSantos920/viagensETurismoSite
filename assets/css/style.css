@@ -81,7 +81,7 @@ body {
 .main-content {
     display: flex;
     
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .content {
@@ -115,6 +115,7 @@ p.description-content{
     font-weight: bolder;
 }
 
+/*  Form */
 .form {
     margin-top: 18px;
     display: flex;
@@ -125,14 +126,21 @@ p.description-content{
     padding-top: 20px;  
 }
 
+/* Inputs */
 .form .input-form {
     height: 50px;
     border-radius: 15px;
     border: none;
     padding-left: 15px;
     font-size: 15px;
+    outline: 0;
 }
 
+.input-form:focus {
+    background-color: rgb(185, 185, 185);
+}
+
+/* Submit */
 .submit-form {
     width: 50%;
     height: 50px;
@@ -140,10 +148,16 @@ p.description-content{
     color: white;
     background-color: var(--main-color);
     border: none;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 700;
 }
 
+.submit-form:hover{
+    background-color: #0d8557;
+    font-style: italic;
+}
+
+/* Img */
 section.img-content img {
     height: 550px;
     width: 500px;
@@ -254,10 +268,15 @@ section.img-content img {
         flex-direction: column;
         gap: 20px;
     }
+
+    .main-content {
+        margin-top: 60px;
+    }
 }
 
 /* 720px */
 @media screen and (max-width: 720px){
+
     div.desc h2.title-content {
         font-size: 30px;
     }
@@ -269,8 +288,8 @@ section.img-content img {
 
 /* 630px */
 @media screen and (max-width: 630px){
+
     .cabecalho {
-        margin-top: 50px;
         flex-direction: row;
     }
 
@@ -281,28 +300,57 @@ section.img-content img {
         display: none;
     }
 }
-/* 720px */
-@media screen and (max-width: 720px){
+
+/* 510px */
+@media screen and (max-width: 510px){
+
+    p.description-content {
+        font-size: 12px;
+        width: 401px;
+    }
+}
+
+/* 414px */
+@media screen and (max-width: 414px){
+
+    p.description-content {
+        font-size: 12px;
+        width: 301px;
+    }
+}
+
+/* 330px */
+@media screen and (max-width: 330px){
+
     div.desc h2.title-content {
-        font-size: 30px;
+        font-size: 25px;
+        line-height: 25px;
     }
 
     div.desc h3.subtitle-content {
-        font-size: 22px;
+        font-size: 18px;
+    }
+
+    p.description-content {
+        font-size: 12px;
+        width: 201px;
     }
 }
 
-/* 630px */
-@media screen and (max-width: 630px){
-    .cabecalho {
-        margin-top: 50px;
-        flex-direction: row;
+/* 254px */
+@media screen and (max-width: 254px){
+
+    div.desc h2.title-content {
+        font-size: 19px;
+        line-height: 25px;
     }
 
-    .main-content {
-        margin-top: 0;
+    div.desc h3.subtitle-content {
+        font-size: 13px;
     }
-    nav.menu {
-        display: none;
+
+    p.description-content {
+        font-size: 12px;
+        width: 101px;
     }
 }
